@@ -57,7 +57,7 @@ The `SimpleCatalog` example uses the
 is used by importing it using the `import` statement below the `pragma` definition:
 
 ````solidity
-import "@rmrk-team/evm-contracts/contracts/implementations/RMRKCatalogImpl.sol";
+import "@rmrk-team/evm/contracts/implementations/RMRKCatalogImpl.sol";
 ````
 
 Once the `RMRKCatalogImpl.sol` is imported into out file, we can set the inheritance of our smart contract:
@@ -96,7 +96,7 @@ above, in the `constructor` and pass them to `RMRKCatalogImpl`:
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.18;
 
-import "@rmrk-team/evm-contracts/contracts/implementations/RMRKCatalogImpl.sol";
+import "@rmrk-team/evm/contracts/implementations/RMRKCatalogImpl.sol";
 
 contract SimpleCatalog is RMRKCatalogImpl {
     // NOTE: Additional custom arguments can be added to the constructor based on your needs.
@@ -231,14 +231,14 @@ The `SimpleEquippable` example uses the
 is used by importing it using the `import` statement below the `pragma` definition: 
 
 ````solidity
-import "@rmrk-team/evm-contracts/contracts/implementations/nativeTokenPay/RMRKEquippableImpl.sol";
+import "@rmrk-team/evm/contracts/implementations/nativeTokenPay/RMRKEquippableImpl.sol";
 ````
 
 The [`RMRKEquipRenderUtils`](https://github.com/rmrk-team/evm/blob/dev/contracts/RMRK/utils/RMRKEquipRenderUtils.sol) is
 imported in the same manner, but only so that we can use it within the user journey script:
 
 ````solidity
-import "@rmrk-team/evm-contracts/contracts/RMRK/utils/RMRKEquipRenderUtils.sol";
+import "@rmrk-team/evm/contracts/RMRK/utils/RMRKEquipRenderUtils.sol";
 ````
 
 Once both are imported, we can set the inheritance of our smart contract for the `RMRKEquippableImpl.sol`:
@@ -313,8 +313,8 @@ above, in the `constructor` and pass them to the `RMRKEquippableImpl`:
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.18;
 
-import "@rmrk-team/evm-contracts/contracts/implementations/nativeTokenPay/RMRKEquippableImpl.sol";
-import "@rmrk-team/evm-contracts/contracts/RMRK/utils/RMRKEquipRenderUtils.sol";
+import "@rmrk-team/evm/contracts/implementations/nativeTokenPay/RMRKEquippableImpl.sol";
+import "@rmrk-team/evm/contracts/RMRK/utils/RMRKEquipRenderUtils.sol";
 
 contract SimpleEquippable is RMRKEquippableImpl {
     // NOTE: Additional custom arguments can be added to the constructor based on your needs.
@@ -1381,7 +1381,7 @@ smart contract to be compatible with the `Catalog` RMRK lego. It uses the
 gain access to the Catalog lego:
 
 ````solidity
-import "@rmrk-team/evm-contracts/contracts/RMRK/catalog/RMRKCatalog.sol";
+import "@rmrk-team/evm/contracts/RMRK/catalog/RMRKCatalog.sol";
 ````
 
 We only need `symbol` and `type_` of the catalog in order to properly initialize it after the `AdvancedCatalog` inherits it:
@@ -1410,7 +1410,7 @@ This is all that is required to get you started with implementing the Catalog RM
 
 pragma solidity ^0.8.18;
 
-import "@rmrk-team/evm-contracts/contracts/RMRK/catalog/RMRKCatalog.sol";
+import "@rmrk-team/evm/contracts/RMRK/catalog/RMRKCatalog.sol";
 
 contract AdvancedCatalog is RMRKCatalog {
     // NOTE: Additional custom arguments can be added to the constructor based on your needs.
@@ -1453,7 +1453,7 @@ order for the smart contract to be compatible with the `MergedEquippable` RMRK l
 gain access to the Merged equippable RMRK lego composite:
 
 ````solidity
-import "@rmrk-team/evm-contracts/contracts/RMRK/equippable/RMRKEquippable.sol";
+import "@rmrk-team/evm/contracts/RMRK/equippable/RMRKEquippable.sol";
 ````
 
 We only need `name` and `symbol` of the NFT collection in order to properly initialize it after the `AdvancedEquippable`
@@ -1483,7 +1483,7 @@ This is all that is required to get you started with implementing the Merged equ
 
 pragma solidity ^0.8.18;
 
-import "@rmrk-team/evm-contracts/contracts/RMRK/equippable/RMRKEquippable.sol";
+import "@rmrk-team/evm/contracts/RMRK/equippable/RMRKEquippable.sol";
 
 contract AdvancedEquippable is RMRKEquippable {
     // NOTE: Additional custom arguments can be added to the constructor based on your needs.

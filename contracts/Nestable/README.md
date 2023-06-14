@@ -36,7 +36,7 @@ The `SimpleNestable` example uses the
 used by importing it using the `import` statement below the `pragma` definition:
 
 ````solidity
-import "@rmrk-team/evm-contracts/contracts/implementations/nativeTokenPay/RMRKNestableImpl.sol";
+import "@rmrk-team/evm/contracts/implementations/nativeTokenPay/RMRKNestableImpl.sol";
 ````
 
 Once the `RMRKNestableImpl.sol` is imported into our file, we can set the inheritance of our smart contract:
@@ -111,7 +111,7 @@ above, in the `constructor` and pass them to `RMRKNestableImpl`:
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.18;
 
-import "@rmrk-team/evm-contracts/contracts/implementations/nativeTokenPay/RMRKNestableImpl.sol";
+import "@rmrk-team/evm/contracts/implementations/nativeTokenPay/RMRKNestableImpl.sol";
 
 contract SimpleNestable is RMRKNestableImpl {
     // NOTE: Additional custom arguments can be added to the constructor based on your needs.
@@ -546,7 +546,7 @@ freedom to the developer. It uses the
 access to the Nestable lego:
 
 ````solidity
-import "@rmrk-team/evm-contracts/contracts/RMRK/nestable/RMRKNestable.sol";
+import "@rmrk-team/evm/contracts/RMRK/nestable/RMRKNestable.sol";
 ````
 
 We only need `name` and `symbol` of the NFT in order to properly initialize it after the `AdvancedNestable` inherits it:
@@ -575,7 +575,7 @@ This is all that is required in order to get you started with implementing the N
 
 pragma solidity ^0.8.18;
 
-import "@rmrk-team/evm-contracts/contracts/RMRK/nestable/RMRKNestable.sol";
+import "@rmrk-team/evm/contracts/RMRK/nestable/RMRKNestable.sol";
 
 
 contract AdvancedNestable is RMRKNestable {

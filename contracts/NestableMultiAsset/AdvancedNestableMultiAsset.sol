@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.18;
 
-import "@rmrk-team/evm-contracts/contracts/RMRK/nestable/RMRKNestableMultiAsset.sol";
+import "@rmrk-team/evm/contracts/RMRK/nestable/RMRKNestableMultiAsset.sol";
 
 contract AdvancedNestableMultiAsset is RMRKNestableMultiAsset {
     // NOTE: Additional custom arguments can be added to the constructor based on your needs.

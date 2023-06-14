@@ -52,9 +52,9 @@ For each of the lego combinations we have sample versions:
 
 Additionally we have render util contracts. The reason these are separate is to save contract space. You can have a single deploy of those and use them on every contract or even use the exising ones (We'll provide them in the future):
 
-1. [`MultiAsset render utils`](@rmrk-team/evm-contracts/contracts/RMRK/utils/RMRKMultiAssetRenderUtils.sol)
+1. [`MultiAsset render utils`](@rmrk-team/evm/contracts/RMRK/utils/RMRKMultiAssetRenderUtils.sol)
 provides utilities to get asset objects from IDs, and accepted or pending asset objects for a given token. The
 MultiAsset lego provides only IDs for the latter.
-2. [`Equip render utils`](@rmrk-team/evm-contracts/contracts/RMRK/utils/RMRKEquipRenderUtils.sol) provides the same
+2. [`Equip render utils`](@rmrk-team/evm/contracts/RMRK/utils/RMRKEquipRenderUtils.sol) provides the same
 shorcuts on extended assets (with equip information). This utility smart contract also has views to get information
 about what is currently equipped to a token and to compose equippables for a token asset.

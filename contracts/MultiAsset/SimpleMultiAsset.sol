@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.18;
 
-import "@rmrk-team/evm-contracts/contracts/implementations/nativeTokenPay/RMRKMultiAssetImpl.sol";
+import "@rmrk-team/evm/contracts/implementations/nativeTokenPay/RMRKMultiAssetImpl.sol";
 
 contract SimpleMultiAsset is RMRKMultiAssetImpl {
     // NOTE: Additional custom arguments can be added to the constructor based on your needs.

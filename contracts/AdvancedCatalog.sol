@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.18;
 
-import "@rmrk-team/evm-contracts/contracts/RMRK/catalog/RMRKCatalog.sol";
+import "@rmrk-team/evm/contracts/RMRK/catalog/RMRKCatalog.sol";
 
 contract AdvancedCatalog is RMRKCatalog {
     // NOTE: Additional custom arguments can be added to the constructor based on your needs.

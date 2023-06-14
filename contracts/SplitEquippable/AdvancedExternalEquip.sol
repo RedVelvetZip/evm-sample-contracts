@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.18;
 
-import "@rmrk-team/evm-contracts/contracts/RMRK/equippable/RMRKExternalEquip.sol";
+import "@rmrk-team/evm/contracts/RMRK/equippable/RMRKExternalEquip.sol";
 
 /* import "hardhat/console.sol"; */
 

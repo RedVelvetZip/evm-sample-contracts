@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.18;
 
-import "@rmrk-team/evm-contracts/contracts/RMRK/multiasset/RMRKMultiAsset.sol";
+import "@rmrk-team/evm/contracts/RMRK/multiasset/RMRKMultiAsset.sol";
 
 contract AdvancedMultiAsset is RMRKMultiAsset {
     // NOTE: Additional custom arguments can be added to the constructor based on your needs.

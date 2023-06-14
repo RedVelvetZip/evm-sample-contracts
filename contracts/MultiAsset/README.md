@@ -35,7 +35,7 @@ The `SimpleMultiAsset` example uses the
 It is used by importing it using the `import` statement below the `pragma` definition:
 
 ````solidity
-import "@rmrk-team/evm-contracts/contracts/implementations/nativeTokenPay/RMRKMultiAssetImpl.sol";
+import "@rmrk-team/evm/contracts/implementations/nativeTokenPay/RMRKMultiAssetImpl.sol";
 ````
 
 Once the `RMRKMultiAssetImpl.sol` is imported into our file, we can set the inheritance of our smart contract:
@@ -101,7 +101,7 @@ So the constructor of the `SimpleMultiAsset` should look like this:
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.18;
 
-import "@rmrk-team/evm-contracts/contracts/implementations/nativeTokenPay/RMRKMultiAssetImpl.sol";
+import "@rmrk-team/evm/contracts/implementations/nativeTokenPay/RMRKMultiAssetImpl.sol";
 
 contract SimpleMultiAsset is RMRKMultiAssetImpl {
     // NOTE: Additional custom arguments can be added to the constructor based on your needs.
@@ -457,7 +457,7 @@ implementation freedom to the developer. It uses the
 import to gain access to the Multi asset lego:
 
 ````solidity
-import "@rmrk-team/evm-contracts/contracts/RMRK/multiasset/RMRKMultiAsset.sol";
+import "@rmrk-team/evm/contracts/RMRK/multiasset/RMRKMultiAsset.sol";
 ````
 
 We only need `name` and `symbol` of the NFT in order to properly initialize it after the `AdvancedMultiAsset`
@@ -487,7 +487,7 @@ This is all that is required to get you started with implementing the Multi asse
 
 pragma solidity ^0.8.18;
 
-import "@rmrk-team/evm-contracts/contracts/RMRK/multiasset/RMRKMultiAsset.sol";
+import "@rmrk-team/evm/contracts/RMRK/multiasset/RMRKMultiAsset.sol";
 
 contract AdvancedMultiAsset is RMRKMultiAsset {
     // NOTE: Additional custom arguments can be added to the constructor based on your needs.

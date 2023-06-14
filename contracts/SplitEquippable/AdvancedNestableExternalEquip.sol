@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.18;
 
-import "@rmrk-team/evm-contracts/contracts/RMRK/equippable/RMRKNestableExternalEquip.sol";
+import "@rmrk-team/evm/contracts/RMRK/equippable/RMRKNestableExternalEquip.sol";
 
 contract AdvancedNestableExternalEquip is RMRKNestableExternalEquip {
     // NOTE: Additional custom arguments can be added to the constructor based on your needs.

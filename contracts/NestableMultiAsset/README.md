@@ -21,7 +21,7 @@ The `SimpleNestableMultiasset` example uses the
 It is used by using the `import` statement below the `pragma` definition:
 
 ````solidity
-import "@rmrk-team/evm-contracts/contracts/implementations/nativeTokenPay/RMRKNestableMultiAssetImpl.sol";
+import "@rmrk-team/evm/contracts/implementations/nativeTokenPay/RMRKNestableMultiAssetImpl.sol";
 ````
 
 Once the `RMRKNestableMultiAsset.sol` is imported into our file, we can set the inheritance of our smart contract:
@@ -94,7 +94,7 @@ With the arguments passed upon initialization defined, we can add our constructo
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.18;
 
-import "@rmrk-team/evm-contracts/contracts/implementations/nativeTokenPay/RMRKNestableMultiAssetImpl.sol";
+import "@rmrk-team/evm/contracts/implementations/nativeTokenPay/RMRKNestableMultiAssetImpl.sol";
 
 contract SimpleNestableMultiAsset is RMRKNestableMultiAssetImpl {
     // NOTE: Additional custom arguments can be added to the constructor based on your needs.
@@ -476,7 +476,7 @@ asset, but leaves more business logic implementation freedom to the developer. I
 import to gain access to the joined Nestable and Multi asset legos:
 
 ````solidity
-import "@rmrk-team/evm-contracts/contracts/RMRK/nestable/RMRKNestableMultiAsset.sol";
+import "@rmrk-team/evm/contracts/RMRK/nestable/RMRKNestableMultiAsset.sol";
 ````
 
 We only need `name` and `symbol` of the NFT in order to properly initialize it after the `AdvancedNestableMultiAsset`
@@ -506,7 +506,7 @@ This is all that is required to get you started with implementing the joined Nes
 
 pragma solidity ^0.8.18;
 
-import "@rmrk-team/evm-contracts/contracts/RMRK/nestable/RMRKNestableMultiAsset.sol";
+import "@rmrk-team/evm/contracts/RMRK/nestable/RMRKNestableMultiAsset.sol";
 
 contract AdvancedNestableMultiAsset is RMRKNestableMultiAsset {
     // NOTE: Additional custom arguments can be added to the constructor based on your needs.

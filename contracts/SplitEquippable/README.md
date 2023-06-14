@@ -37,7 +37,7 @@ The `SimpleExternalEquip` example uses the
 It is used by importing it using the `import` statement below the `pragma` definition:
 
 ````solidity
-import "@rmrk-team/evm-contracts/contracts/implementations/RMRKExternalEquipImpl.sol";
+import "@rmrk-team/evm/contracts/implementations/RMRKExternalEquipImpl.sol";
 ````
 
 Once the `RMRKExternalEquipImpl.sol` is imported into our file, we can set the inheritance of our smart contract:
@@ -74,7 +74,7 @@ In order to properly initiate the inherited smart contract, our smart contract n
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.18;
 
-import "@rmrk-team/evm-contracts/contracts/implementations/RMRKExternalEquipImpl.sol";
+import "@rmrk-team/evm/contracts/implementations/RMRKExternalEquipImpl.sol";
 
 contract SimpleExternalEquip is RMRKExternalEquipImpl {
     // NOTE: Additional custom arguments can be added to the constructor based on your needs.
@@ -136,7 +136,7 @@ The `SimpleNestableExternalEquip` example uses the
 It is used by importing it using the `import` statement below the `pragma` definition:
 
 ````solidity
-import "@rmrk-team/evm-contracts/contracts/implementations/RMRKNestableExternalEquipImpl.sol";
+import "@rmrk-team/evm/contracts/implementations/RMRKNestableExternalEquipImpl.sol";
 ````
 
 Once the `RMRKNestableExternalEquipImpl.sol` is imported into our file, we can set the inheritance of our smart contract:
@@ -214,7 +214,7 @@ mentioned above, in the `constructor` and pass them to the `RMRKNestableExternal
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.18;
 
-import "@rmrk-team/evm-contracts/contracts/implementations/RMRKNestableExternalEquipImpl.sol";
+import "@rmrk-team/evm/contracts/implementations/RMRKNestableExternalEquipImpl.sol";
 
 contract SimpleNestableExternalEquip is RMRKNestableExternalEquipImpl {
     // NOTE: Additional custom arguments can be added to the constructor based on your needs.
@@ -1264,7 +1264,7 @@ implementation in order for the smart contract to be compatible with the `MultiA
 to gain access to the `MultiAsset` and `Equippable` part of the External equippable RMRK lego composite:
 
 ````solidity
-import "@rmrk-team/evm-contracts/contracts/RMRK/equippable/RMRKExternalEquip.sol";
+import "@rmrk-team/evm/contracts/RMRK/equippable/RMRKExternalEquip.sol";
 ````
 
 We only need the `nestableAddress`, which is the address of the deployed `AdvancedNestableExternalEquip` smart contract,
@@ -1297,7 +1297,7 @@ external equippable RMRK lego composite.
 
 pragma solidity ^0.8.18;
 
-import "@rmrk-team/evm-contracts/contracts/RMRK/equippable/RMRKExternalEquip.sol";
+import "@rmrk-team/evm/contracts/RMRK/equippable/RMRKExternalEquip.sol";
 
 /* import "hardhat/console.sol"; */
 
@@ -1331,7 +1331,7 @@ composite. It uses the
 import to gain access to the `Nestable` part of the External equippable RMRK lego composite:
 
 ````solidity
-import "@rmrk-team/evm-contracts/contracts/RMRK/equippable/RMRKNestableExternalEquip.sol";
+import "@rmrk-team/evm/contracts/RMRK/equippable/RMRKNestableExternalEquip.sol";
 ````
 
 We only need the `name` and `symbol` of the NFT collection in order to properly initialize it after the
@@ -1361,7 +1361,7 @@ This is all that is required to get you started with implementing the `Nestable`
 
 pragma solidity ^0.8.18;
 
-import "@rmrk-team/evm-contracts/contracts/RMRK/equippable/RMRKNestableExternalEquip.sol";
+import "@rmrk-team/evm/contracts/RMRK/equippable/RMRKNestableExternalEquip.sol";
 
 contract AdvancedNestableExternalEquip is RMRKNestableExternalEquip {
     // NOTE: Additional custom arguments can be added to the constructor based on your needs.
